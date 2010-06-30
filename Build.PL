@@ -5,8 +5,11 @@ use Module::Build;
 my $builder = Module::Build->new(
     module_name         => 'WWW::Yandex::MailForDomain',
     license             => 'perl',
-    dist_author         => q{Oleg Alistratov <ali@ali.org.ua>},
+    dist_author         => q{Oleg Alistratov <zero@cpan.org>},
     dist_version_from   => 'lib/WWW/Yandex/MailForDomain.pm',
+    resources           => {
+        repository => 'http://github.com/alien/ali-public/tree/master/modules/WWW-Yandex-MailForDomain/',
+    },
     build_requires => {
         'Test::More' => 0,
         'LWP::UserAgent' => 0,
